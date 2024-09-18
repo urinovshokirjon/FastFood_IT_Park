@@ -1,0 +1,39 @@
+### 1. Category create qilish
+POST http://localhost:8080/category/adm/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjY0ODI3MTYsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIxIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ3Iiwicm9sZSI6IlJPTEVfQURNSU4iLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjY1NjkxMTYsImlzcyI6IlN0YWRpdW0ifQ.bYJypyI_kvB0-m5JMnyTE_saCVm1k-ZATr77zTmWdwW-U0aWnjTzP0JCDIRn_TGYEwr26g_4goolNk-HOzl7qg
+Accept-Language: UZ
+Content-Type: application/json
+
+{
+  "orderNumber": 4,
+  "nameUz": "Lavash",
+  "nameEn": "Lavash",
+  "nameRu": "Lavash"
+}
+
+### 2. Update category
+PUT http://localhost:8080/category/adm/update/3
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjYwMzM5NzAsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIxIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ3Iiwicm9sZSI6IlJPTEVfQURNSU4iLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjYxMjAzNzAsImlzcyI6IlN0YWRpdW0ifQ.rQaUQWdL81ZI1Gwl0YC5q_ezK6CKA6kiVRcefGrkWm_yReZjcz_FWQHiU8CVl44LksjA_X_yoliyDQMTFs3dqQ
+Accept-Language: UZ
+Content-Type: application/json
+
+{
+  "orderNumber": 2,
+  "nameUz": "Norin",
+  "nameEn": "Norin",
+  "nameRu": "Norin"
+}
+
+### 3. Category list
+GET http://localhost:8080/category/adm/list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjYwMzM5NzAsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIxIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ3Iiwicm9sZSI6IlJPTEVfQURNSU4iLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjYxMjAzNzAsImlzcyI6IlN0YWRpdW0ifQ.rQaUQWdL81ZI1Gwl0YC5q_ezK6CKA6kiVRcefGrkWm_yReZjcz_FWQHiU8CVl44LksjA_X_yoliyDQMTFs3dqQ
+
+### 4. Delete category
+DELETE http://localhost:8080/category/adm/delete/4
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjYwMzM5NzAsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIxIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ3Iiwicm9sZSI6IlJPTEVfQURNSU4iLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjYxMjAzNzAsImlzcyI6IlN0YWRpdW0ifQ.rQaUQWdL81ZI1Gwl0YC5q_ezK6CKA6kiVRcefGrkWm_yReZjcz_FWQHiU8CVl44LksjA_X_yoliyDQMTFs3dqQ
+Accept-Language: EN
+
+### 5. Category By Lang
+GET http://localhost:8080/category/lang
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjYwMzM5NzAsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIxIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ3Iiwicm9sZSI6IlJPTEVfQURNSU4iLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjYxMjAzNzAsImlzcyI6IlN0YWRpdW0ifQ.rQaUQWdL81ZI1Gwl0YC5q_ezK6CKA6kiVRcefGrkWm_yReZjcz_FWQHiU8CVl44LksjA_X_yoliyDQMTFs3dqQ
+Accept-Language: EN

@@ -1,0 +1,10 @@
+POST http://localhost:8080/attach/upload
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjY0ODA4NDUsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIyIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ4Iiwicm9sZSI6IlJPTEVfT1dORVIiLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjY1NjcyNDUsImlzcyI6IlN0YWRpdW0ifQ.2qYfN1y3F1wFCM7_xUBdU3RJH701O2uY0lgRsj_tOgFt2IWmkUZam76I388d8AR23ep0m0hS5Eu6ig2gAu1z1g
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="shashlik.jpeg"
+
+< C:\Users\Urinov Shokirjon\Desktop\taomlar\shashlik.jpeg
+
+

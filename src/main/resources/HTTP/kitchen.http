@@ -1,0 +1,32 @@
+### Create
+POST http://localhost:8080/kitchen/owr/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjY0ODA4NDUsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIyIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ4Iiwicm9sZSI6IlJPTEVfT1dORVIiLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjY1NjcyNDUsImlzcyI6IlN0YWRpdW0ifQ.2qYfN1y3F1wFCM7_xUBdU3RJH701O2uY0lgRsj_tOgFt2IWmkUZam76I388d8AR23ep0m0hS5Eu6ig2gAu1z1g
+Content-Type: application/json
+
+{
+  "name": "Qozon",
+  "lat": 42.26,
+  "lon": 73.26,
+  "description": "Milliy taomlar",
+  "districtId": 12,
+  "photoList": ["6ab3215f-bfe4-46fa-b731-4220f6b5cb22.jpg"]
+}
+
+### Lokatsiya bo'yiga eng yaqinlarini olish
+GET http://localhost:8080/kitchen/closest-kitchen-list?
+    page=1&
+    size=1&
+    lat=41.26&
+    lon=72.25
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjY0ODA4NDUsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIyIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ4Iiwicm9sZSI6IlJPTEVfT1dORVIiLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjY1NjcyNDUsImlzcyI6IlN0YWRpdW0ifQ.2qYfN1y3F1wFCM7_xUBdU3RJH701O2uY0lgRsj_tOgFt2IWmkUZam76I388d8AR23ep0m0hS5Eu6ig2gAu1z1g
+Accept-Language: UZ
+
+### Region id
+GET http://localhost:8080/kitchen/region-id-kitchen-list?
+    page=1&
+    size=1&
+    regionId=1&
+    lat=41.26&
+    lon=72.25
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjY0ODA4NDUsImlkIjoiOGNiMWViOGUtYmQyZS00NDEzLWI0ZDEtYWRiMzUyNTViMTIyIiwidXNlcm5hbWUiOiIrOTk4OTQ1MDIyMTQ4Iiwicm9sZSI6IlJPTEVfT1dORVIiLCJyZWZyZXNoVG9rZW4iOmZhbHNlLCJleHAiOjE3MjY1NjcyNDUsImlzcyI6IlN0YWRpdW0ifQ.2qYfN1y3F1wFCM7_xUBdU3RJH701O2uY0lgRsj_tOgFt2IWmkUZam76I388d8AR23ep0m0hS5Eu6ig2gAu1z1g
+Accept-Language: UZ
