@@ -9,8 +9,6 @@ services:
     depends_on:
       - db
     environment:
-      - POSTGRES_USER=learn
-      - POSTGRES_PASSWORD=12345
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/fast_food
       - SPRING_DATASOURCE_USERNAME=learn
       - SPRING_DATASOURCE_PASSWORD=12345
